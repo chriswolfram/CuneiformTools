@@ -1,36 +1,14 @@
-(* ::Package:: *)
-
-(* ::Section:: *)
-(*Package Header*)
-
-
 BeginPackage["ChristopherWolfram`CuneiformTools`"];
 
 
-(* ::Text:: *)
-(*Declare your public symbols here:*)
-
-
-SayHello;
+(* Oracc *)
+$OraccBase
+OraccData
 
 
 Begin["`Private`"];
 
-
-(* ::Section:: *)
-(*Definitions*)
-
-
-(* ::Text:: *)
-(*Define your public and private symbols here:*)
-
-
-SayHello[name_? StringQ] := "Hello " <> name <> "!";
-
-
-(* ::Section::Closed:: *)
-(*Package Footer*)
-
+Needs["ChristopherWolfram`CuneiformTools`Oracc`"]
 
 End[];
 EndPackage[];
