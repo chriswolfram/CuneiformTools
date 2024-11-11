@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Christopher Wolfram",
     "License" -> "MIT",
     "PublisherID" -> "ChristopherWolfram",
-    "Version" -> "1.0.0",
+    "Version" -> "1.0.1",
     "WolframVersion" -> "14+",
     "PrimaryContext" -> "ChristopherWolfram`CuneiformTools`",
     "DocumentationURL" -> "https://resources.wolframcloud.com/PacletRepository/resources",

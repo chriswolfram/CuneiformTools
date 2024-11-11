@@ -5,7 +5,7 @@ Begin["`Private`"];
 Needs["ChristopherWolfram`CuneiformTools`"]
 
 
-$OraccBase = "build-oracc.museum.upenn.edu";
+$OraccBase = "oracc.org";
 
 
 (* General *)
@@ -45,7 +45,7 @@ oraccProjectCatalog[projSpec_]:=
 
 oraccObjectHTML[projSpec_, obj_] :=
 	URLRead[HTTPRequest[<|
-		"Domain"->"oracc.iaas.upenn.edu",
+		"Domain"->$OraccBase,
 		"Path"->{oraccProjectPath[projSpec],obj,"html"}
 	|>]]
 
@@ -149,7 +149,7 @@ getOraccLinesProperty[lines_,prop_]:=
 	|>]
 
 Options[OraccData] = {
-	"OraccBase"->"build-oracc.museum.upenn.edu"
+	"OraccBase":>$OraccBase
 };
 
 OraccData[project_,text_,prop_,opts:OptionsPattern[]] :=
